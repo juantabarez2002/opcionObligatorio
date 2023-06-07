@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Cantina</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="js/clases.js" defer></script>
+  <script src="js/funciones.js" defer></script>
+  <script type="text/javascript" src="./js/calendar.js"></script>
+  <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#RealizarPedido">Realizar Pedido</a>
+      <a href="#MisPedidos">Mis Pedidos</a>
+      <a href="#Historial">Historial</a>
+      <a href="#Contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Ver el Menú y hacer pedido-->
+
+  <section class="menu" id="RealizarPedido">
+    <div class="titulo">
+      <span> Menú Semanal</span>
+      <h2>Vea nuestro menú</h2>
+    </div>
+    <div class="box-container">
+      <div class="box">
+        <div class="calendar" id="calendar">
+        </div>
+      </div>
+      
+
+
+      <div class="box">
+        <div class="imagen">
+          <img src="" alt="menu" />
+        </div>
+        <h4 class="dia" id="idDia">Seleccione dia...</h4>
+        <div class="opciones">
+          <form id="form">
+            <label for="idPlato">Seleccione plato:</label>
+
+            <select name="plato" id="idPlato">
+              <option value="opcion1" id="opcion1">Principal</option>
+              <option value="opcion2" id="opcion2">Alternativo</option>
+            </select>
+            <h6 class="postre">Postre: <span id="idPostre"> </span></h6>
+            <label for="idComensal">Seleccione el comensal:</label>
+
+            <select name="comensal" id="idComensal"></select>
+            <div class="precio"><span>$</span>250</div>
+            <div class="btn">
+              <input type="button" id="idBotonPedir" value="Pedir">
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+
+
+
+  <!-- Fin de ver el Menú y hacer pedido-->
+
+  <!-- Mis pedidos-->
+  <section class="Historial" id="MisPedidos">
+    <div class="titulo">Mis Pedidos</div>
+    <ul class="ListaMisPedidos" id="idListaMisPedidos">
+      <li>Sin Datos</li>
+    </ul>
+  </section>
+
+  <!-- <section class="MisPedidosContainer">
+  <div class="titulo">Mis Pedidos</div>
+  <section class="MisPedidos" id="MisPedidos">
+    <div class="boxMisPedidos">
+      <ul class="info">
+        <li class="etiqueta">FECHA:</li>
+        <li class="valor">Martes</li>
+      </ul>
+      <ul class="info">
+        <li class="etiqueta">Plato:</li>
+        <li class="valor">Nuggets con arroz</li>
+      </ul>
+      <ul class="info">
+        <li class="etiqueta">Postre:</li>
+        <li class="valor">Gelatina</li>
+      </ul>
+      <ul class="info">
+        <li class="etiqueta">Comensal:</li>
+        <li class="valor">Maria Garcia</li>
+      </ul>
+      <ul class="info">
+        <li class="etiqueta">Precio:</li>
+        <li class="valor"> $250</li>
+      </ul>
+    </div>
+  </section>
+</section> -->
+
+  <section class="formEliminacion">
+    <h3>Cancelar Pedido</h3>
+    <form>
+      <label for="idCancelarPedido">Seleccione el comensal y dia del pedido que desee cancelar</label>
+      <br />
+      <br />
+      <select id="idCancelarPedido">
+        <option value="Sin datos" selected>Sin datos</option>
+      </select>
+      <input type="button" value="Cancelar Pedido" id="idBotonCancelarPedido" name="borrar" />
+    </form>
+  </section>
+
+  <!-- Esta es otra opcion que no esta en formato lista sini que son etiquetas nomas -->
+
+  <!-- <section class="MisPedidosContainer">
+  <div class="titulo">Mis Pedidos</div>
+  <section class="MisPedidos" id="MisPedidos">
+    <div class="boxMisPedidos">
+      <div class="info">
+        <h3 class="etiqueta">FECHA:</h3>
+        <h4 class="valor">Martes</h4>
+      </div>
+      <div class="info">
+        <h3 class="etiqueta">Plato:</h3>
+        <h4 class="valor">Nuggets con arroz</h4>
+      </div>
+      <div class="info">
+        <h3 class="etiqueta">Postre:</h3>
+        <h4 class="valor">Gelatina</h4>
+      </div>
+      <div class="info">
+        <h3 class="etiqueta">Comensal:</h3>
+        <h4 class="valor">Maria Garcia</h4>
+      </div>
+      <h2>Precio: $250</h2>
+    </div>
+    <button class="cancelar">Cancelar</button>
+  </section>
+</section>-->
+  <!-- Fin mis pedidos-->
+
+  <!-- Fin mis pedidos-->
+
+  <!-- Historial -->
+  <section class="historial" id="Historial">
+    <div class="titulo">Historial</div>
+  </section>
+  <!-- Historial -->
+
+  <!-- Contacto-->
+  <section class="contacto" id="Contacto">
+    <div class="box-container">
+      <div class="titulo">Contacto</div>
+      <img class="logos" alt="Logo casa" src="logos/casa.png" />
+      <p>Nombre: La Cantina</p>
+      <br />
+      <img class="logos" alt="Logo persona" src="logos/persona.png" />
+      <p>Propietaria: Cynthia</p>
+      <br />
+      <img class="logos" alt="Logo telefono" src="logos/telefono.png" />
+      <p>Telefono: 094070470</p>
+      <br />
+      <img class="logos" alt="Logo mail" src="logos/mail.png" />
+      <p>Email: lacantina@sanpablo.edu.uy</p>
+      <br />
+    </div>
+  </section>
+
+  <!-- Fin contacto-->
+
+</html>

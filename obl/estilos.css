@@ -1,0 +1,468 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* nav {
+  margin-bottom: 20px;
+} */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #053710;
+  border-radius: 5rem;
+}
+
+section {
+  padding: 8rem 9%;
+}
+
+.titulo {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #130f40;
+  font-weight: bold;
+}
+
+/* .heading span {
+  color: #20641e;
+} */
+
+.header {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* -webkit-transform: translateY(-10rem);
+          transform: translateY(-10rem); */
+}
+
+/* .header.active {
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+} */
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.header .navbar a:hover {
+  color: #20641e;
+}
+
+/* #file-override-custom .button{ 
+  border-radius: 16px;
+  color:black;
+  font-weight: bold;
+  background-color: darkgreen;
+  font-size: medium;
+  
+} */
+
+.menu .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box {
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+  background: #eee;
+}
+
+/* .menu .box-container .box .btn {
+  bottom: 0rem;
+  right: 2rem; 
+  
+  background: #fff;
+} */
+
+.menu .box-container .box .dia {
+  text-align: center;
+  color: #130f40;
+  font-size: 2.25rem;
+  font-weight: bolder;
+}
+
+.menu .box-container .box .postre {
+  padding-top: 5%;
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu .box-container .box .opciones {
+  margin: 1rem 0;
+}
+
+.menu .box-container .box .opciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+/* .menu .box-container .box .list p span {
+  color: #e67e22;
+} */
+
+.menu .box-container .box .precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #130f40;
+}
+
+.menu .box-container .box .precio span {
+  font-size: 1.5rem;
+}
+
+.ListaMisPedidos {
+  font-size: 18px;
+  font-weight: normal;
+  background-color: rgb(243, 234, 234);
+  padding: 2%;
+}
+
+/* .contacto {
+  background-color: gray;
+  padding: 50px;
+  border-radius: 10px;
+  color: white;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} */
+
+/* .contacto h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+} */
+
+/* .contacto p,
+.contacto img {
+  display: flex;
+  align-items: center;
+} */
+
+.contacto p {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.logos {
+  height: 23px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  top: -10px;
+}
+
+.formEliminacion {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.formEliminacion h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Este es el codigo css de lo que hice en mis pedidos
+.MisPedidosContainer {
+  text-align: center;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.MisPedidos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.boxMisPedidos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.etiqueta {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.valor {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .MisPedidos {
+    max-width: 100%;
+  }
+}
+----------------------------------------- */
+/* .formuEliminacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.formuEliminacion h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.formuEliminacion form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.formuEliminacion label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.formuEliminacion select {
+  display: inline-block;
+  width: 150px; 
+}
+
+.formuEliminacion input[type="button"] {
+  margin-top: 10px;
+} */
+/* 
+Este es el codigo css de el otro posible caso de HTML que es el MIS 
+Mis Pedidos hecho con etiquetas */
+
+/*.MisPedidos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.boxMisPedidos {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.etiqueta {
+  margin-right: 5px;
+}
+
+.valor {
+  margin-left: 5px;
+}
+
+.cancelar {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .MisPedidos {
+    max-width: 100%;
+  }
+}*/
+
+
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-calendar: #1b1e22;
+  --color-cell: #e3e3e3;
+  --color-cell-disabled: #424649;
+}
+
+.root {
+  min-height: 100vh;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  padding: 20px 10px;
+  background-color: var(--color-bg-calendar);
+  border-radius: 3px;
+  width: 100%;
+  /* max-width: 300px; */
+  font-family: sans-serif;
+}
+
+.calendar__header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.calendar .control {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.grid__header, .grid__body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.grid__header {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.grid__body {
+  grid-auto-rows: 40px;
+  color: var(--color-cell);
+}
+
+.grid__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid__cell--gd {
+  cursor: pointer;
+}
+
+.grid__cell--selected {
+  color: var(--color-bg-calendar);
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--color-bg-calendar) inset;
+}
+
+.grid__cell--disabled {
+  color: var(--color-cell-disabled);
+  cursor: not-allowed;
+}
+
+
